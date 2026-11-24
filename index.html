@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>RAP SCENE | Hlavná stránka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            color-scheme:dark;
+            --bg:#121012; --ink:#f4eeee; --accent:#e10b0b; --panel:#201517; --line:#f4eeee; --on-accent:#ffffff;
+            box-sizing:border-box;
+            padding-top:env(safe-area-inset-top,0px);
+            padding-bottom:env(safe-area-inset-bottom,0px);
+        }
+        @media (prefers-color-scheme:dark){
+            :root:not([data-theme="light"]){color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        }
+        :root[data-theme="dark"]{color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        html{scroll-padding-top:env(safe-area-inset-top,0px)}
+        *{box-sizing:border-box}
+        body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.55 "Work Sans",system-ui,sans-serif;min-height:100vh}
+        .display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+        nav{display:flex;flex-wrap:wrap;gap:.25rem .5rem;padding:1rem clamp(1rem,4vw,3rem);border-bottom:3px solid var(--line);align-items:center}
+        nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:.35rem .6rem;border-radius:2px}
+        nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+        nav a.on{background:var(--accent);color:var(--on-accent)}
+        nav .logo{font-family:Anton,Impact,sans-serif;font-size:1.5rem;margin-right:auto;padding-left:0}
+        nav .logo.on{background:none;color:var(--accent)}
+        main{padding:0 clamp(1rem,4vw,3rem) 4rem;max-width:1200px;margin:0 auto}
+        .hero{padding:clamp(2rem,8vw,5rem) 0 2rem}
+        .hero h1{font-size:clamp(4.5rem,24vw,17rem);letter-spacing:-.01em;word-break:break-word}
+        .hero p{max-width:34rem;font-size:1.2rem;margin:1.5rem 0 0}
+        .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+        .tile{display:block;padding:1.25rem;border:3px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;transition:transform .15s}
+        .tile:hover,.tile:focus-visible{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--accent);outline:none}
+        .tile b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.8rem;text-transform:uppercase;line-height:1}
+        .tile span{display:block;margin-top:.5rem;font-size:.95rem}
+        footer{border-top:3px solid var(--line);padding:1.5rem clamp(1rem,4vw,3rem);font-size:.9rem}
+        @media (prefers-reduced-motion:reduce){.tile{transition:none}}
+    </style>
+</head>
+<body>
+<nav aria-label="Hlavná navigácia">
+    <a class="logo display on" href="index.html">RAP SCENE</a>
+    <a href="interpreti.html">Top-10 Interpretov</a>
+    <a href="albumy.html">Top-10 Albumov</a>
+    <a href="news.html">Rap News</a>
+    <a href="underground.html">Underground</a>
+    <a href="songy.html">Top-10 Songov</a>
+</nav>
+
+<main>
+    <section class="hero">
+        <h1 class="display">RAP<br>SCENE</h1>
+        <p>Česká a slovenská rapová scéna na jednom mieste: interpreti, albumy, songy, správy a underground z Česka a Slovenska.</p>
+    </section>
+    <div class="tiles">
+        <a class="tile" href="interpreti.html"><b>Top-10 Interpretov</b><span>Podľa mesačných poslucháčov na Spotify.</span></a>
+        <a class="tile" href="albumy.html"><b>Top-10 Albumov</b><span>Podľa mesačných poslucháčov interpreta.</span></a>
+        <a class="tile" href="news.html"><b>Rap News</b><span>Albumy, koncerty a rozhovory.</span></a>
+        <a class="tile" href="underground.html"><b>Underground</b><span>Top-10 podľa mesačných poslucháčov.</span></a>
+        <a class="tile" href="songy.html"><b>Top-10 Songov</b><span>Skladby, ktoré sa počúvajú v Česku a na Slovensku.</span></a>
+    </div>
+</main>
+
+<footer>RAP SCENE. Česká a slovenská rapová scéna. Výbery sú subjektívne.</footer>
+</body>
+</html>

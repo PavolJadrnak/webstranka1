@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Top-10 Albumov | RAP SCENE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            color-scheme:dark;
+            --bg:#121012; --ink:#f4eeee; --accent:#e10b0b; --panel:#201517; --line:#f4eeee; --on-accent:#ffffff;
+            box-sizing:border-box;
+            padding-top:env(safe-area-inset-top,0px);
+            padding-bottom:env(safe-area-inset-bottom,0px);
+        }
+        @media (prefers-color-scheme:dark){
+            :root:not([data-theme="light"]){color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        }
+        :root[data-theme="dark"]{color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        html{scroll-padding-top:env(safe-area-inset-top,0px)}
+        *{box-sizing:border-box}
+        body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.55 "Work Sans",system-ui,sans-serif;min-height:100vh}
+        .display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+        nav{display:flex;flex-wrap:wrap;gap:.25rem .5rem;padding:1rem clamp(1rem,4vw,3rem);border-bottom:3px solid var(--line);align-items:center}
+        nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:.35rem .6rem;border-radius:2px}
+        nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+        nav a.on{background:var(--accent);color:var(--on-accent)}
+        nav .logo{font-family:Anton,Impact,sans-serif;font-size:1.5rem;margin-right:auto;padding-left:0}
+        nav .logo.on{background:none;color:var(--accent)}
+        main{padding:0 clamp(1rem,4vw,3rem) 4rem;max-width:1200px;margin:0 auto}
+        h2.display{font-size:clamp(3rem,12vw,7rem);padding:2.5rem 0 1.5rem}
+        .lead{max-width:40rem;font-size:1.15rem;margin:0 0 2rem}
+        ol.rank{list-style:none;margin:0;padding:.25rem clamp(1rem,3vw,1.75rem);counter-reset:r;border:3px solid var(--line);background:var(--panel)}
+        ol.rank li{counter-increment:r;display:grid;grid-template-columns:3.5rem 1fr;gap:.5rem 1rem;align-items:baseline;padding:.9rem 0;border-top:2px solid var(--line)}
+        ol.rank li:first-child{border-top:0}
+        ol.rank li:last-child{border-bottom:0}
+        ol.rank li::before{content:counter(r);font-family:Anton,Impact,sans-serif;font-size:2.4rem;line-height:1;color:var(--accent)}
+        ol.rank strong{font-size:1.2rem}
+        ol.rank small{display:block;font-size:.95rem;opacity:.85}
+        footer{border-top:3px solid var(--line);padding:1.5rem clamp(1rem,4vw,3rem);font-size:.9rem}
+    </style>
+</head>
+<body>
+<nav aria-label="Hlavná navigácia">
+    <a class="logo display" href="index.html">RAP SCENE</a>
+    <a href="interpreti.html">Top-10 Interpretov</a>
+    <a class="on" href="albumy.html">Top-10 Albumov</a>
+    <a href="news.html">Rap News</a>
+    <a href="underground.html">Underground</a>
+    <a href="songy.html">Top-10 Songov</a>
+</nav>
+
+<main>
+    <h2 class="display">Top-10 Albumov</h2>
+    <p class="lead">Albumy nemajú vlastných mesačných poslucháčov, tie sa merajú len pri interpretoch. Preto sú albumy zoradené podľa mesačných poslucháčov ich interpreta, vždy s jedným alebo dvoma albumami od interpreta z rebríčka. Čísla poslucháčov sú posledné dostupné, nie novembrové. Separ a Luca Brassi10x tu chýbajú, lebo som nenašiel overený zoznam ich albumov.</p>
+    <ol class="rank">
+        <li><div><strong>Bieber Fever</strong><small>Calin (CZ), 2024. Interpret má ≈ 1,2 mil. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Roadtrip</strong><small>Calin &amp; Viktor Sheen, 2023. Interpret má ≈ 1,2 mil. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Exit U Palice</strong><small>Yzomandias (CZ), 2026. Číslo 1 v českom rebríčku predaja albumov k 2. novembru 2026. Interpret má ≈ 972 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Černobílej svět</strong><small>Viktor Sheen (CZ), 2019. Interpret má ≈ 966 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Příběhy a sny</strong><small>Viktor Sheen (CZ), 2021. Interpret má ≈ 966 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Made in Czechoslovakia</strong><small>Ben Cristovao (CZ/SK), 2014. Interpret má ≈ 864 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Painkillers</strong><small>P T K &amp; Yzomandias (CZ), 2024. Interpret má ≈ 834 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Ja, Sára</strong><small>Sara Rikas (SK), 2025. Interpret má ≈ 712 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Tetris</strong><small>DJ Wich &amp; Ektor (CZ), 2012. Interpret má ≈ 657 tis. mesačných poslucháčov na Spotify.</small></div></li>
+        <li><div><strong>Krstný otec</strong><small>Rytmus (SK), 2016. Interpret má ≈ 612 tis. mesačných poslucháčov na Spotify.</small></div></li>
+    </ol>
+</main>
+
+<footer>RAP SCENE. Česká a slovenská rapová scéna. Výbery sú subjektívne.</footer>
+</body>
+</html>

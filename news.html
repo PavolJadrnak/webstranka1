@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Rap News | RAP SCENE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            color-scheme:dark;
+            --bg:#121012; --ink:#f4eeee; --accent:#e10b0b; --panel:#201517; --line:#f4eeee; --on-accent:#ffffff;
+            box-sizing:border-box;
+            padding-top:env(safe-area-inset-top,0px);
+            padding-bottom:env(safe-area-inset-bottom,0px);
+        }
+        @media (prefers-color-scheme:dark){
+            :root:not([data-theme="light"]){color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        }
+        :root[data-theme="dark"]{color-scheme:dark;--bg:#0a0809;--ink:#f4eeee;--accent:#f01818;--panel:#181012;--line:#f4eeee;--on-accent:#ffffff}
+        html{scroll-padding-top:env(safe-area-inset-top,0px)}
+        *{box-sizing:border-box}
+        body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.55 "Work Sans",system-ui,sans-serif;min-height:100vh}
+        .display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+        nav{display:flex;flex-wrap:wrap;gap:.25rem .5rem;padding:1rem clamp(1rem,4vw,3rem);border-bottom:3px solid var(--line);align-items:center}
+        nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:.35rem .6rem;border-radius:2px}
+        nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+        nav a.on{background:var(--accent);color:var(--on-accent)}
+        nav .logo{font-family:Anton,Impact,sans-serif;font-size:1.5rem;margin-right:auto;padding-left:0}
+        nav .logo.on{background:none;color:var(--accent)}
+        main{padding:0 clamp(1rem,4vw,3rem) 4rem;max-width:1200px;margin:0 auto}
+        h2.display{font-size:clamp(3rem,12vw,7rem);padding:2.5rem 0 1.5rem}
+        .sub{font-size:clamp(2rem,7vw,3.2rem);margin:2.5rem 0 1rem}
+        .lead{max-width:40rem;font-size:1.15rem;margin:0 0 2rem}
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+        .card{border:3px solid var(--line);background:var(--panel);padding:1.25rem}
+        .card h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.6rem;text-transform:uppercase;line-height:1;margin:0 0 .6rem}
+        .card p{margin:0}
+        .tag{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:.85rem;padding:.1rem .5rem;margin-bottom:.6rem}
+        .card a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+        footer{border-top:3px solid var(--line);padding:1.5rem clamp(1rem,4vw,3rem);font-size:.9rem}
+    </style>
+</head>
+<body>
+<nav aria-label="Hlavná navigácia">
+    <a class="logo display" href="index.html">RAP SCENE</a>
+    <a href="interpreti.html">Top-10 Interpretov</a>
+    <a href="albumy.html">Top-10 Albumov</a>
+    <a class="on" href="news.html">Rap News</a>
+    <a href="underground.html">Underground</a>
+    <a href="songy.html">Top-10 Songov</a>
+</nav>
+
+<main>
+    <h2 class="display">Rap News</h2>
+    <p class="lead">Novinky z českej a slovenskej scény k novembru 2026.</p>
+    <h3 class="sub display">Nové albumy a songy</h3>
+    <div class="cards">
+        <article class="card"><span class="tag">Album</span><h3>Yzomandias: Exit U Palice</h3><p>Album vyšiel v roku 2026 a k 2. novembru bol na prvom mieste českého rebríčka predaja albumov.</p></article>
+        <article class="card"><span class="tag">EP</span><h3>Calin: Toxic Love</h3><p>Nové EP z roku 2026. Calin tento rok vydal aj singly Balkan Paradise (s Ca$hanova Bulhar) a Krejčí.</p></article>
+        <article class="card"><span class="tag">Song</span><h3>Sara Rikas, Yzomandias a NobodyListen: Talk2me (remix)</h3><p>Remix skladby Talk2me, ktorá pôvodne vyšla v roku 2025. Remix vyšiel v roku 2026.</p></article>
+    </div>
+    <h3 class="sub display">Koncerty, turné a festivaly</h3>
+    <div class="cards">
+        <article class="card"><span class="tag">Turné</span><h3>Calin a Viktor Sheen: Arena Tour</h3><p>Lístky na turné sa vypredali za pár hodín, preto pribudli ďalšie termíny. Druhý koncert v pražskej O2 Aréne je 5. decembra a v Brne pribudol termín 31. januára. <a href="https://refresher.sk/212504-Calin-a-Viktor-Sheen-vypredali-Arena-Tour-za-par-hodin-Pridavaju-dalsie-koncerty" target="_blank" rel="noopener">Čítať na Refresher.sk</a></p></article>
+        <article class="card"><span class="tag">Termíny</span><h3>Praha, Ostrava a Bratislava</h3><p>Podľa predpredaja sú koncerty v O2 Aréne v Prahe 4. a 5. decembra 2026, v Ostravar Aréne v Ostrave 19. decembra a v Bratislave na Zimnom štadióne Ondreja Nepelu 15. januára 2027. Aktuálne termíny over na GoOut. <a href="https://goout.net/en/arena-tour-calin-and-viktor-sheen/szwlgny/" target="_blank" rel="noopener">Arena Tour na GoOut</a></p></article>
+        <article class="card"><span class="tag">Festival</span><h3>Hip Hop Žije na Zlatých Pieskoch</h3><p>V programe festivalu v Bratislave boli ohlásení Separ, Kontrafakt, Yzomandias, Pil C, Nik Tendo, Majk Spirit, Tina a ďalší z českej a slovenskej scény.</p></article>
+    </div>
+    <h3 class="sub display">Rozhovory</h3>
+    <div class="cards">
+        <article class="card"><span class="tag">Rozhovor</span><h3>Ego: Rytmus, Kontrafakt a Yzomandias</h3><p>Ego odpovedal v relácii Close Friends na otázky o Kontrafakte, Rytmusovi, Separovi aj Yzomandiasovi. Hovorí aj o tom, či môže Kontrafakt ešte natočiť album na úrovni Navždy. <a href="https://refresher.sk/212547-Ego-pod-palbou-otazok-Rytmus-Kontrafakt-Yzomandias-aj-kriza-stredneho-veku-CLOSE-FRIENDS" target="_blank" rel="noopener">Čítať na Refresher.sk</a></p></article>
+        <article class="card"><span class="tag">Rozhovor</span><h3>Ladislav Zeman, autor knihy Českej rap</h3><p>Autor knihy o českom rape hovorí o vývoji scény od začiatkov až po súčasnosť a o tom, ako žije dnes vďaka mladým interpretom. <a href="https://cc.cz/ceskej-rap-byl-magickej-svet-diky-mladym-ted-scena-zije-jako-nikdy-rika-autor-hiphopove-bible/" target="_blank" rel="noopener">Čítať na cc.cz</a></p></article>
+        <article class="card"><span class="tag">Podcast</span><h3>Rapové Kopačky</h3><p>Český podcast, ktorý recenzuje nové rapové albumy a rozoberá všetky skladby Viktora Sheena a Calina. <a href="https://creators.spotify.com/pod/profile/rapovekopacky/episodes/Seadili-Jsme-Vechny-Viktor-Sheen--Calin-Tracks-e2l1e4h" target="_blank" rel="noopener">Epizóda na Spotify</a></p></article>
+    </div>
+</main>
+
+<footer>RAP SCENE. Česká a slovenská rapová scéna. Výbery sú subjektívne.</footer>
+</body>
+</html>
